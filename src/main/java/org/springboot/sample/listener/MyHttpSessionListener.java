@@ -21,7 +21,7 @@ public class MyHttpSessionListener implements HttpSessionListener {
 
 	@Override
 	public void sessionDestroyed(HttpSessionEvent se) {
-		System.out.println("ServletContex初始化");
+		System.out.println("Session 被销毁");
 	}
 
 }

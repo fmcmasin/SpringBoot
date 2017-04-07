@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @myblog  http://blog.csdn.net/catoop/
  * @create    2016年1月6日
  */
-//@WebServlet(urlPatterns="/xs/*", description="Servlet的说明")
+@WebServlet(urlPatterns="/xs/myservlet1", description="Servlet的说明")
 public class MyServlet extends HttpServlet{
 	
 	private static final long serialVersionUID = -8685285401859800066L;

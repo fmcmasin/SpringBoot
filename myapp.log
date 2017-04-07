@@ -2532,3 +2532,815 @@ java.lang.RuntimeException: 测试事务异常回滚
 2016-01-27 15:49:14.443 DEBUG 37128 --- [main] o.s.sample.SpringBootSampleApplication   : Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
 2016-01-27 15:49:14.444  INFO 37128 --- [main] o.s.sample.SpringBootSampleApplication   : No active profile set, falling back to default profiles: default
 2016-01-27 15:49:14.912  INFO 37128 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e1ef60: startup date [Wed Jan 27 15:49:14 CST 2016]; root of context hierarchy
+2017-04-06 20:57:06.640  INFO 6348 --- [main] o.s.sample.SpringBootSampleApplication   : Starting SpringBootSampleApplication on admin-PC with PID 6348 (E:\SpringBoot\target\classes started by masin in E:\SpringBoot)
+2017-04-06 20:57:06.643 DEBUG 6348 --- [main] o.s.sample.SpringBootSampleApplication   : Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2017-04-06 20:57:06.643  INFO 6348 --- [main] o.s.sample.SpringBootSampleApplication   : No active profile set, falling back to default profiles: default
+2017-04-06 20:57:06.688  INFO 6348 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e1a30f: startup date [Thu Apr 06 20:57:06 CST 2017]; root of context hierarchy
+2017-04-06 20:57:07.799  INFO 6348 --- [main] o.s.s.d.DynamicDataSourceRegister        : Dynamic DataSource Registry
+2017-04-06 20:57:07.894  INFO 6348 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-04-06 20:57:08.061  INFO 6348 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IUserDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IUserDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-06 20:57:08.068  INFO 6348 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IScoreDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IScoreDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-06 20:57:08.299  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class org.springboot.sample.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$d37790f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.482  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getEhCacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.489  INFO 6348 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'org.springboot.sample.security.MyShiroRealm.authorizationCache' does not yet exist.  Creating now.
+2017-04-06 20:57:08.509  INFO 6348 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [org.springboot.sample.security.MyShiroRealm.authorizationCache]
+2017-04-06 20:57:08.533  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#60c6fe3a' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.533  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#60c6fe3a' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.535  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#131d86b0' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.538  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#2bf525ec' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.658  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.670  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration' of type [class org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$bd7c2558] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.697  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.699  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [class org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:08.708  INFO 6348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-0 - is starting.
+2017-04-06 20:57:08.904  INFO 6348 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-06 20:57:08.969  INFO 6348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-06 20:57:09.047  INFO 6348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-06 20:57:09.048  INFO 6348 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-04-06 20:57:09.050  INFO 6348 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-04-06 20:57:09.251  INFO 6348 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-06 20:57:09.296  INFO 6348 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-06 20:57:09.409  INFO 6348 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-04-06 20:57:09.698  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.699  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.708  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#af7867f' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.738  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.738  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.930  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.930  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class com.sun.proxy.$Proxy72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.931  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [class org.springboot.sample.security.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.959  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.963  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#50f523a9' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.963  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#50f523a9' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.963  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#1c63a156' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.963  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#2ac6ffad' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.964  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#6ebbcccb' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.980  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.980  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:09.983  INFO 6348 --- [main] o.s.sample.config.ShiroConfiguration     : ##################从数据库读取权限规则，加载到shiroFilter中##################
+2017-04-06 20:57:10.008  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:10.107  INFO 6348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d26fc538] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 20:57:10.742  INFO 6348 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-06 20:57:10.754  INFO 6348 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-06 20:57:10.755  INFO 6348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2017-04-06 20:57:10.794  WARN 6348 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [H:\springboot-tomcat-tmp\work\Tomcat\localhost\myspringboot] for context [/myspringboot]
+2017-04-06 20:57:10.929 ERROR 6348 --- [localhost-startStop-1] o.apache.catalina.valves.AccessLogValve  : Failed to create directory [H:\springboot-tomcat-tmp\logs] for access logs
+2017-04-06 20:57:10.930 ERROR 6348 --- [localhost-startStop-1] o.apache.catalina.valves.AccessLogValve  : Failed to create directory [H:\springboot-tomcat-tmp\logs] for access logs
+2017-04-06 20:57:10.932 ERROR 6348 --- [localhost-startStop-1] o.apache.catalina.valves.AccessLogValve  : Failed to open access log file [H:\springboot-tomcat-tmp\logs\access_log.2017-04-06.log]
+
+java.io.FileNotFoundException: H:\springboot-tomcat-tmp\logs\access_log.2017-04-06.log (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method) ~[na:1.7.0_60]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221) ~[na:1.7.0_60]
+	at org.apache.catalina.valves.AccessLogValve.open(AccessLogValve.java:579) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.valves.AccessLogValve.startInternal(AccessLogValve.java:609) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:170) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5166) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [na:1.7.0_60]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_60]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+
+2017-04-06 20:57:11.128  INFO 6348 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-06 20:57:11.132  INFO 6348 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/myspringboot]  : Initializing Spring embedded WebApplicationContext
+2017-04-06 20:57:11.132  INFO 6348 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4446 ms
+2017-04-06 20:57:11.204 DEBUG 6348 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Debug
+2017-04-06 20:57:11.205 TRACE 6348 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Trace
+2017-04-06 20:57:11.205  INFO 6348 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Info
+2017-04-06 20:57:12.373  INFO 6348 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-06 20:57:12.373  INFO 6348 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-06 20:57:12.374  INFO 6348 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-06 20:57:12.374  INFO 6348 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-06 20:57:12.374  INFO 6348 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'delegatingFilterProxy' to urls: [/*]
+2017-04-06 20:57:12.374  INFO 6348 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'myFilter' to urls: [/*]
+2017-04-06 20:57:12.374  INFO 6348 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'shiroFilter' to: [/*]
+2017-04-06 20:57:12.374  INFO 6348 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'myServlet' to [/xs/*]
+2017-04-06 20:57:12.375  INFO 6348 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-06 20:57:12.375  INFO 6348 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'org.springboot.sample.servlet.MyServlet2' to [/xs/myservlet]
+2017-04-06 20:57:12.418  INFO 6348 --- [main] o.s.sample.config.MyWebAppConfigurer     : D:\java\jdk1.7.0_60
+2017-04-06 20:57:12.418  INFO 6348 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-06 20:57:12.418  INFO 6348 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-06 20:57:12.418  INFO 6348 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-06 20:57:12.984  INFO 6348 --- [main] o.s.sample.config.MyBatisConfiguration   : 注册MyBatis分页插件PageHelper
+2017-04-06 20:57:13.634  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e1a30f: startup date [Thu Apr 06 20:57:06 CST 2017]; root of context hierarchy
+2017-04-06 20:57:13.640  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected @ModelAttribute methods in resourceUrlProviderController
+2017-04-06 20:57:13.803  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/webjarslocator/{webjar}/**]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.ClassPathResource> org.springboot.sample.config.WebJarsController.locateWebjarAsset(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-06 20:57:13.805  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.springboot.sample.controller.HelloController.hello()
+2017-04-06 20:57:13.805  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/list]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> org.springboot.sample.controller.HelloController.getList()
+2017-04-06 20:57:13.806  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/info]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springboot.sample.controller.HelloController.getInfo(java.lang.String)
+2017-04-06 20:57:13.806  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /index]}" onto public java.lang.String org.springboot.sample.controller.PageController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-06 20:57:13.806  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page1]}" onto public org.springframework.web.servlet.ModelAndView org.springboot.sample.controller.PageController.page1()
+2017-04-06 20:57:13.807  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page2]}" onto public java.lang.String org.springboot.sample.controller.PageController.page2(org.springframework.ui.Model)
+2017-04-06 20:57:13.807  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/score/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.ScoreController.getScoreList()
+2017-04-06 20:57:13.809  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.loginForm(org.springframework.ui.Model)
+2017-04-06 20:57:13.810  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.login(org.springboot.sample.entity.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-06 20:57:13.810  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-06 20:57:13.810  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-06 20:57:13.810  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit/{userid}]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(int)
+2017-04-06 20:57:13.810  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.unauthorizedRole()
+2017-04-06 20:57:13.812  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.StudentController.getScoreList()
+2017-04-06 20:57:13.813  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/likeName]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.likeName(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-06 20:57:13.813  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/list]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.getStus()
+2017-04-06 20:57:13.816  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-06 20:57:13.816  INFO 6348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-06 20:57:14.026  INFO 6348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myres/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 20:57:14.027  INFO 6348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myimgs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 20:57:14.027  INFO 6348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 20:57:14.027  INFO 6348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 20:57:14.173  INFO 6348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 20:57:14.856  INFO 6348 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-06 20:57:14.920 ERROR 6348 --- [main] o.apache.jasper.EmbeddedServletOptions   : The scratchDir you specified: H:\springboot-tomcat-tmp\work\Tomcat\localhost\myspringboot is unusable.
+2017-04-06 20:57:14.928  INFO 6348 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-06 20:57:14.931  INFO 6348 --- [main] o.s.sample.runner.MyStartupRunner1       : >>>>>>>>>>>>>>>服务启动执行，执行加载数据等操作 11111111 <<<<<<<<<<<<<
+2017-04-06 20:57:14.997  INFO 6348 --- [main] o.s.sample.runner.MyStartupRunner1       : 测试这里可以访问数据库：6，23
+2017-04-06 20:57:15.004 DEBUG 6348 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-06 20:57:15.004  INFO 6348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - is starting.
+2017-04-06 20:57:15.010 DEBUG 6348 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-06 20:57:15.010  INFO 6348 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds1 >>> 小明1
+2017-04-06 20:57:15.010 DEBUG 6348 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-06 20:57:15.011  INFO 6348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - is starting.
+2017-04-06 20:57:15.023 DEBUG 6348 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-06 20:57:15.023  INFO 6348 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds2 >>> 小明2
+2017-04-06 20:57:15.029  INFO 6348 --- [main] o.s.sample.runner.MyStartupRunner1       : ############Hello Shanhy
+2017-04-06 20:57:15.030  INFO 6348 --- [main] o.s.sample.SpringBootSampleApplication   : Started SpringBootSampleApplication in 8.796 seconds (JVM running for 9.101)
+2017-04-07 09:37:45.063  INFO 5724 --- [main] o.s.sample.SpringBootSampleApplication   : Starting SpringBootSampleApplication on admin-PC with PID 5724 (E:\SpringBoot\target\classes started by masin in E:\SpringBoot)
+2017-04-07 09:37:45.065 DEBUG 5724 --- [main] o.s.sample.SpringBootSampleApplication   : Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2017-04-07 09:37:45.065  INFO 5724 --- [main] o.s.sample.SpringBootSampleApplication   : No active profile set, falling back to default profiles: default
+2017-04-07 09:37:45.117  INFO 5724 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ccf7a24: startup date [Fri Apr 07 09:37:45 CST 2017]; root of context hierarchy
+2017-04-07 09:37:46.059  INFO 5724 --- [main] o.s.s.d.DynamicDataSourceRegister        : Dynamic DataSource Registry
+2017-04-07 09:37:46.176  INFO 5724 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-04-07 09:37:46.323  INFO 5724 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IScoreDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IScoreDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 09:37:46.328  INFO 5724 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IUserDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IUserDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 09:37:46.566  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class org.springboot.sample.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$5c4ff0fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.761  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getEhCacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.767  INFO 5724 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'org.springboot.sample.security.MyShiroRealm.authorizationCache' does not yet exist.  Creating now.
+2017-04-07 09:37:46.791  INFO 5724 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [org.springboot.sample.security.MyShiroRealm.authorizationCache]
+2017-04-07 09:37:46.810  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#329120e8' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.810  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#329120e8' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.812  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#63f61ba5' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.814  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#419d7364' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.925  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.932  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration' of type [class org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$c949d46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.957  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.959  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [class org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:46.968  INFO 5724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-0 - is starting.
+2017-04-07 09:37:47.157  INFO 5724 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-07 09:37:47.180  INFO 5724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-07 09:37:47.296  INFO 5724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-07 09:37:47.298  INFO 5724 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-04-07 09:37:47.299  INFO 5724 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-04-07 09:37:47.494  INFO 5724 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-07 09:37:47.548  INFO 5724 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-07 09:37:47.671  INFO 5724 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-04-07 09:37:48.019  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.019  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.030  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#366afa06' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.059  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.059  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.252  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.252  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class com.sun.proxy.$Proxy72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.252  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [class org.springboot.sample.security.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.280  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.282  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#e67122f' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.282  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#e67122f' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.282  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#21efebe1' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.283  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#e55c179' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.283  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#2010f649' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.295  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.295  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.297  INFO 5724 --- [main] o.s.sample.config.ShiroConfiguration     : ##################从数据库读取权限规则，加载到shiroFilter中##################
+2017-04-07 09:37:48.316  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:48.371  INFO 5724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$21883d26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:37:49.018  INFO 5724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-07 09:37:49.031  INFO 5724 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-07 09:37:49.032  INFO 5724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2017-04-07 09:37:49.068  WARN 5724 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [H:\springboot-tomcat-tmp\work\Tomcat\localhost\myspringboot] for context [/myspringboot]
+2017-04-07 09:37:49.178 ERROR 5724 --- [localhost-startStop-1] o.apache.catalina.valves.AccessLogValve  : Failed to create directory [H:\springboot-tomcat-tmp\logs] for access logs
+2017-04-07 09:37:49.179 ERROR 5724 --- [localhost-startStop-1] o.apache.catalina.valves.AccessLogValve  : Failed to create directory [H:\springboot-tomcat-tmp\logs] for access logs
+2017-04-07 09:37:49.183 ERROR 5724 --- [localhost-startStop-1] o.apache.catalina.valves.AccessLogValve  : Failed to open access log file [H:\springboot-tomcat-tmp\logs\access_log.2017-04-07.log]
+
+java.io.FileNotFoundException: H:\springboot-tomcat-tmp\logs\access_log.2017-04-07.log (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method) ~[na:1.7.0_60]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221) ~[na:1.7.0_60]
+	at org.apache.catalina.valves.AccessLogValve.open(AccessLogValve.java:579) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.valves.AccessLogValve.startInternal(AccessLogValve.java:609) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:170) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5166) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [na:1.7.0_60]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_60]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+
+2017-04-07 09:37:49.378  INFO 5724 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-07 09:37:49.383  INFO 5724 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/myspringboot]  : Initializing Spring embedded WebApplicationContext
+2017-04-07 09:37:49.384  INFO 5724 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4269 ms
+2017-04-07 09:37:49.432 DEBUG 5724 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Debug
+2017-04-07 09:37:49.432 TRACE 5724 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Trace
+2017-04-07 09:37:49.432  INFO 5724 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Info
+2017-04-07 09:37:50.493  INFO 5724 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-07 09:37:50.493  INFO 5724 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-07 09:37:50.493  INFO 5724 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-07 09:37:50.493  INFO 5724 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-07 09:37:50.493  INFO 5724 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'delegatingFilterProxy' to urls: [/*]
+2017-04-07 09:37:50.494  INFO 5724 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'myFilter' to urls: [/*]
+2017-04-07 09:37:50.494  INFO 5724 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'shiroFilter' to: [/*]
+2017-04-07 09:37:50.494  INFO 5724 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'myServlet' to [/xs/*]
+2017-04-07 09:37:50.495  INFO 5724 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-07 09:37:50.495  INFO 5724 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'org.springboot.sample.servlet.MyServlet2' to [/xs/myservlet]
+2017-04-07 09:37:50.540  INFO 5724 --- [main] o.s.sample.config.MyWebAppConfigurer     : D:\java\jdk1.7.0_60
+2017-04-07 09:37:50.540  INFO 5724 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-07 09:37:50.540  INFO 5724 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-07 09:37:50.540  INFO 5724 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-07 09:37:50.979  INFO 5724 --- [main] o.s.sample.config.MyBatisConfiguration   : 注册MyBatis分页插件PageHelper
+2017-04-07 09:37:51.697  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ccf7a24: startup date [Fri Apr 07 09:37:45 CST 2017]; root of context hierarchy
+2017-04-07 09:37:51.702  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected @ModelAttribute methods in resourceUrlProviderController
+2017-04-07 09:37:51.854  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/webjarslocator/{webjar}/**]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.ClassPathResource> org.springboot.sample.config.WebJarsController.locateWebjarAsset(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 09:37:51.856  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/info]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springboot.sample.controller.HelloController.getInfo(java.lang.String)
+2017-04-07 09:37:51.856  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.springboot.sample.controller.HelloController.hello()
+2017-04-07 09:37:51.856  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/list]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> org.springboot.sample.controller.HelloController.getList()
+2017-04-07 09:37:51.857  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /index]}" onto public java.lang.String org.springboot.sample.controller.PageController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 09:37:51.857  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page1]}" onto public org.springframework.web.servlet.ModelAndView org.springboot.sample.controller.PageController.page1()
+2017-04-07 09:37:51.857  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page2]}" onto public java.lang.String org.springboot.sample.controller.PageController.page2(org.springframework.ui.Model)
+2017-04-07 09:37:51.858  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/score/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.ScoreController.getScoreList()
+2017-04-07 09:37:51.860  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.loginForm(org.springframework.ui.Model)
+2017-04-07 09:37:51.860  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.login(org.springboot.sample.entity.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 09:37:51.860  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 09:37:51.860  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 09:37:51.860  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit/{userid}]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(int)
+2017-04-07 09:37:51.861  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.unauthorizedRole()
+2017-04-07 09:37:51.861  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.StudentController.getScoreList()
+2017-04-07 09:37:51.862  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/likeName]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.likeName(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 09:37:51.862  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/list]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.getStus()
+2017-04-07 09:37:51.863  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-07 09:37:51.864  INFO 5724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-07 09:37:52.034  INFO 5724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myres/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:37:52.035  INFO 5724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myimgs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:37:52.035  INFO 5724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:37:52.035  INFO 5724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:37:52.170  INFO 5724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:37:52.799  INFO 5724 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-07 09:37:52.859 ERROR 5724 --- [main] o.apache.jasper.EmbeddedServletOptions   : The scratchDir you specified: H:\springboot-tomcat-tmp\work\Tomcat\localhost\myspringboot is unusable.
+2017-04-07 09:37:52.867  INFO 5724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-07 09:37:52.869  INFO 5724 --- [main] o.s.sample.runner.MyStartupRunner1       : >>>>>>>>>>>>>>>服务启动执行，执行加载数据等操作 11111111 <<<<<<<<<<<<<
+2017-04-07 09:37:52.936  INFO 5724 --- [main] o.s.sample.runner.MyStartupRunner1       : 测试这里可以访问数据库：6，23
+2017-04-07 09:37:52.942 DEBUG 5724 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 09:37:52.942  INFO 5724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - is starting.
+2017-04-07 09:37:52.949 DEBUG 5724 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 09:37:52.949  INFO 5724 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds1 >>> 小明1
+2017-04-07 09:37:52.950 DEBUG 5724 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 09:37:52.950  INFO 5724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - is starting.
+2017-04-07 09:37:52.957 DEBUG 5724 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 09:37:52.957  INFO 5724 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds2 >>> 小明2
+2017-04-07 09:37:52.962  INFO 5724 --- [main] o.s.sample.runner.MyStartupRunner1       : ############Hello Shanhy
+2017-04-07 09:37:52.963  INFO 5724 --- [main] o.s.sample.SpringBootSampleApplication   : Started SpringBootSampleApplication in 8.307 seconds (JVM running for 8.683)
+2017-04-07 09:38:27.295  INFO 6284 --- [main] o.s.sample.SpringBootSampleApplication   : Starting SpringBootSampleApplication on admin-PC with PID 6284 (E:\SpringBoot\target\classes started by masin in E:\SpringBoot)
+2017-04-07 09:38:27.297 DEBUG 6284 --- [main] o.s.sample.SpringBootSampleApplication   : Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2017-04-07 09:38:27.297  INFO 6284 --- [main] o.s.sample.SpringBootSampleApplication   : No active profile set, falling back to default profiles: default
+2017-04-07 09:38:27.335  INFO 6284 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c9af241: startup date [Fri Apr 07 09:38:27 CST 2017]; root of context hierarchy
+2017-04-07 09:38:28.148  INFO 6284 --- [main] o.s.s.d.DynamicDataSourceRegister        : Dynamic DataSource Registry
+2017-04-07 09:38:28.224  INFO 6284 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-04-07 09:38:28.348  INFO 6284 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IUserDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IUserDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 09:38:28.351  INFO 6284 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IScoreDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IScoreDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 09:38:28.574  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class org.springboot.sample.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$3bc117c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.735  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getEhCacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.740  INFO 6284 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'org.springboot.sample.security.MyShiroRealm.authorizationCache' does not yet exist.  Creating now.
+2017-04-07 09:38:28.756  INFO 6284 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [org.springboot.sample.security.MyShiroRealm.authorizationCache]
+2017-04-07 09:38:28.773  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#3ece08da' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.773  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#3ece08da' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.775  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#1d0dbe25' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.778  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#11241756' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.862  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.867  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration' of type [class org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$ec05c409] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.891  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.893  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [class org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:28.899  INFO 6284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-0 - is starting.
+2017-04-07 09:38:29.056  INFO 6284 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-07 09:38:29.076  INFO 6284 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-07 09:38:29.154  INFO 6284 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-07 09:38:29.155  INFO 6284 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-04-07 09:38:29.157  INFO 6284 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-04-07 09:38:29.304  INFO 6284 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-07 09:38:29.343  INFO 6284 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-07 09:38:29.442  INFO 6284 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-04-07 09:38:29.671  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.671  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.680  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#5b4294b0' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.705  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.706  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.855  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.856  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class com.sun.proxy.$Proxy72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.856  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [class org.springboot.sample.security.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.876  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.880  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#51e88ff6' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.880  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#51e88ff6' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.880  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#782ef15e' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.881  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#ef76b1d' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.882  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#15994498' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.892  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.892  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.894  INFO 6284 --- [main] o.s.sample.config.ShiroConfiguration     : ##################从数据库读取权限规则，加载到shiroFilter中##################
+2017-04-07 09:38:29.910  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:29.974  INFO 6284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f963e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:38:30.500  INFO 6284 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-07 09:38:30.509  INFO 6284 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-07 09:38:30.509  INFO 6284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2017-04-07 09:38:30.875  INFO 6284 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-07 09:38:30.878  INFO 6284 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/myspringboot]  : Initializing Spring embedded WebApplicationContext
+2017-04-07 09:38:30.879  INFO 6284 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3546 ms
+2017-04-07 09:38:30.923 DEBUG 6284 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Debug
+2017-04-07 09:38:30.923 TRACE 6284 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Trace
+2017-04-07 09:38:30.923  INFO 6284 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Info
+2017-04-07 09:38:31.800  INFO 6284 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-07 09:38:31.800  INFO 6284 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-07 09:38:31.801  INFO 6284 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-07 09:38:31.801  INFO 6284 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-07 09:38:31.801  INFO 6284 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'delegatingFilterProxy' to urls: [/*]
+2017-04-07 09:38:31.801  INFO 6284 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'myFilter' to urls: [/*]
+2017-04-07 09:38:31.801  INFO 6284 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'shiroFilter' to: [/*]
+2017-04-07 09:38:31.801  INFO 6284 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'myServlet' to [/xs/*]
+2017-04-07 09:38:31.802  INFO 6284 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-07 09:38:31.802  INFO 6284 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'org.springboot.sample.servlet.MyServlet2' to [/xs/myservlet]
+2017-04-07 09:38:31.834  INFO 6284 --- [main] o.s.sample.config.MyWebAppConfigurer     : D:\java\jdk1.7.0_60
+2017-04-07 09:38:31.835  INFO 6284 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-07 09:38:31.835  INFO 6284 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-07 09:38:31.835  INFO 6284 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test
+2017-04-07 09:38:32.216  INFO 6284 --- [main] o.s.sample.config.MyBatisConfiguration   : 注册MyBatis分页插件PageHelper
+2017-04-07 09:38:32.712  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c9af241: startup date [Fri Apr 07 09:38:27 CST 2017]; root of context hierarchy
+2017-04-07 09:38:32.717  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected @ModelAttribute methods in resourceUrlProviderController
+2017-04-07 09:38:32.821  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/webjarslocator/{webjar}/**]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.ClassPathResource> org.springboot.sample.config.WebJarsController.locateWebjarAsset(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 09:38:32.822  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/info]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springboot.sample.controller.HelloController.getInfo(java.lang.String)
+2017-04-07 09:38:32.822  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.springboot.sample.controller.HelloController.hello()
+2017-04-07 09:38:32.822  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/list]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> org.springboot.sample.controller.HelloController.getList()
+2017-04-07 09:38:32.823  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /index]}" onto public java.lang.String org.springboot.sample.controller.PageController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 09:38:32.823  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page1]}" onto public org.springframework.web.servlet.ModelAndView org.springboot.sample.controller.PageController.page1()
+2017-04-07 09:38:32.823  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page2]}" onto public java.lang.String org.springboot.sample.controller.PageController.page2(org.springframework.ui.Model)
+2017-04-07 09:38:32.824  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/score/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.ScoreController.getScoreList()
+2017-04-07 09:38:32.825  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.unauthorizedRole()
+2017-04-07 09:38:32.826  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.loginForm(org.springframework.ui.Model)
+2017-04-07 09:38:32.826  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.login(org.springboot.sample.entity.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 09:38:32.826  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 09:38:32.826  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 09:38:32.826  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit/{userid}]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(int)
+2017-04-07 09:38:32.827  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.StudentController.getScoreList()
+2017-04-07 09:38:32.828  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/likeName]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.likeName(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 09:38:32.828  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/list]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.getStus()
+2017-04-07 09:38:32.830  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-07 09:38:32.831  INFO 6284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-07 09:38:32.937  INFO 6284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myres/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:38:32.937  INFO 6284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myimgs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:38:32.938  INFO 6284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:38:32.938  INFO 6284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:38:33.007  INFO 6284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:38:33.376  INFO 6284 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-07 09:38:33.424  INFO 6284 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-07 09:38:33.426  INFO 6284 --- [main] o.s.sample.runner.MyStartupRunner1       : >>>>>>>>>>>>>>>服务启动执行，执行加载数据等操作 11111111 <<<<<<<<<<<<<
+2017-04-07 09:38:33.487  INFO 6284 --- [main] o.s.sample.runner.MyStartupRunner1       : 测试这里可以访问数据库：6，23
+2017-04-07 09:38:33.491 DEBUG 6284 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 09:38:33.492  INFO 6284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - is starting.
+2017-04-07 09:38:33.496 DEBUG 6284 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 09:38:33.497  INFO 6284 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds1 >>> 小明1
+2017-04-07 09:38:33.497 DEBUG 6284 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 09:38:33.497  INFO 6284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - is starting.
+2017-04-07 09:38:33.502 DEBUG 6284 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 09:38:33.503  INFO 6284 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds2 >>> 小明2
+2017-04-07 09:38:33.507  INFO 6284 --- [main] o.s.sample.runner.MyStartupRunner1       : ############Hello Shanhy
+2017-04-07 09:38:33.508  INFO 6284 --- [main] o.s.sample.SpringBootSampleApplication   : Started SpringBootSampleApplication in 6.548 seconds (JVM running for 6.766)
+2017-04-07 09:41:51.137  INFO 7648 --- [main] o.s.sample.SpringBootSampleApplication   : Starting SpringBootSampleApplication on admin-PC with PID 7648 (E:\SpringBoot\target\classes started by masin in E:\SpringBoot)
+2017-04-07 09:41:51.140 DEBUG 7648 --- [main] o.s.sample.SpringBootSampleApplication   : Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2017-04-07 09:41:51.140  INFO 7648 --- [main] o.s.sample.SpringBootSampleApplication   : No active profile set, falling back to default profiles: default
+2017-04-07 09:41:51.185  INFO 7648 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@155ebb17: startup date [Fri Apr 07 09:41:51 CST 2017]; root of context hierarchy
+2017-04-07 09:41:52.003  INFO 7648 --- [main] o.s.s.d.DynamicDataSourceRegister        : Dynamic DataSource Registry
+2017-04-07 09:41:52.077  INFO 7648 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-04-07 09:41:52.196  INFO 7648 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IUserDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IUserDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 09:41:52.200  INFO 7648 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IScoreDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IScoreDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 09:41:52.392  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class org.springboot.sample.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$f048cd83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.551  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getEhCacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.556  INFO 7648 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'org.springboot.sample.security.MyShiroRealm.authorizationCache' does not yet exist.  Creating now.
+2017-04-07 09:41:52.572  INFO 7648 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [org.springboot.sample.security.MyShiroRealm.authorizationCache]
+2017-04-07 09:41:52.589  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#48a7406c' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.589  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#48a7406c' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.591  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#713e7e09' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.593  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#587817e4' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.674  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.679  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration' of type [class org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$a08d79cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.701  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.702  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [class org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:52.709  INFO 7648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-0 - is starting.
+2017-04-07 09:41:52.864  INFO 7648 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-07 09:41:52.883  INFO 7648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-07 09:41:52.960  INFO 7648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-07 09:41:52.961  INFO 7648 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-04-07 09:41:52.962  INFO 7648 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-04-07 09:41:53.101  INFO 7648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-07 09:41:53.138  INFO 7648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-07 09:41:53.231  INFO 7648 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-04-07 09:41:53.453  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.453  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.462  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#702fdd9e' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.487  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.487  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.630  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.630  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class com.sun.proxy.$Proxy72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.630  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [class org.springboot.sample.security.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.651  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.653  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#13778859' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.653  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#13778859' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.653  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#2467b08b' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.653  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#75610ba2' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.654  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#3642f4e2' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.665  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.665  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.667  INFO 7648 --- [main] o.s.sample.config.ShiroConfiguration     : ##################从数据库读取权限规则，加载到shiroFilter中##################
+2017-04-07 09:41:53.683  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:53.747  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b58119ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 09:41:54.258  INFO 7648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-07 09:41:54.267  INFO 7648 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-07 09:41:54.268  INFO 7648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2017-04-07 09:41:54.608  INFO 7648 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-07 09:41:54.611  INFO 7648 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/myspringboot]  : Initializing Spring embedded WebApplicationContext
+2017-04-07 09:41:54.611  INFO 7648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3428 ms
+2017-04-07 09:41:54.654 DEBUG 7648 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Debug
+2017-04-07 09:41:54.654 TRACE 7648 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Trace
+2017-04-07 09:41:54.654  INFO 7648 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Info
+2017-04-07 09:41:55.488  INFO 7648 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-07 09:41:55.488  INFO 7648 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-07 09:41:55.488  INFO 7648 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-07 09:41:55.488  INFO 7648 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-07 09:41:55.488  INFO 7648 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'delegatingFilterProxy' to urls: [/*]
+2017-04-07 09:41:55.488  INFO 7648 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'myFilter' to urls: [/*]
+2017-04-07 09:41:55.488  INFO 7648 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'shiroFilter' to: [/*]
+2017-04-07 09:41:55.489  INFO 7648 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'myServlet' to [/xs/*]
+2017-04-07 09:41:55.490  INFO 7648 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-07 09:41:55.490  INFO 7648 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'org.springboot.sample.servlet.MyServlet2' to [/xs/myservlet]
+2017-04-07 09:41:55.522  INFO 7648 --- [main] o.s.sample.config.MyWebAppConfigurer     : D:\java\jdk1.7.0_60
+2017-04-07 09:41:55.523  INFO 7648 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=true
+2017-04-07 09:41:55.523  INFO 7648 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=true
+2017-04-07 09:41:55.523  INFO 7648 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=true
+2017-04-07 09:41:55.954  INFO 7648 --- [main] o.s.sample.config.MyBatisConfiguration   : 注册MyBatis分页插件PageHelper
+2017-04-07 09:41:56.486  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@155ebb17: startup date [Fri Apr 07 09:41:51 CST 2017]; root of context hierarchy
+2017-04-07 09:41:56.492  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected @ModelAttribute methods in resourceUrlProviderController
+2017-04-07 09:41:56.596  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/webjarslocator/{webjar}/**]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.ClassPathResource> org.springboot.sample.config.WebJarsController.locateWebjarAsset(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 09:41:56.598  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.springboot.sample.controller.HelloController.hello()
+2017-04-07 09:41:56.598  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/list]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> org.springboot.sample.controller.HelloController.getList()
+2017-04-07 09:41:56.598  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/info]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springboot.sample.controller.HelloController.getInfo(java.lang.String)
+2017-04-07 09:41:56.599  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /index]}" onto public java.lang.String org.springboot.sample.controller.PageController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 09:41:56.599  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page1]}" onto public org.springframework.web.servlet.ModelAndView org.springboot.sample.controller.PageController.page1()
+2017-04-07 09:41:56.599  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page2]}" onto public java.lang.String org.springboot.sample.controller.PageController.page2(org.springframework.ui.Model)
+2017-04-07 09:41:56.600  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/score/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.ScoreController.getScoreList()
+2017-04-07 09:41:56.601  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.loginForm(org.springframework.ui.Model)
+2017-04-07 09:41:56.602  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.login(org.springboot.sample.entity.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 09:41:56.602  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 09:41:56.602  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 09:41:56.602  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit/{userid}]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(int)
+2017-04-07 09:41:56.602  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.unauthorizedRole()
+2017-04-07 09:41:56.603  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.StudentController.getScoreList()
+2017-04-07 09:41:56.603  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/likeName]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.likeName(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 09:41:56.603  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/list]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.getStus()
+2017-04-07 09:41:56.605  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-07 09:41:56.605  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-07 09:41:56.725  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myres/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:41:56.725  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myimgs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:41:56.725  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:41:56.726  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:41:56.794  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 09:41:57.144  INFO 7648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-07 09:41:57.195  INFO 7648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-07 09:41:57.197  INFO 7648 --- [main] o.s.sample.runner.MyStartupRunner1       : >>>>>>>>>>>>>>>服务启动执行，执行加载数据等操作 11111111 <<<<<<<<<<<<<
+2017-04-07 09:41:57.257  INFO 7648 --- [main] o.s.sample.runner.MyStartupRunner1       : 测试这里可以访问数据库：6，23
+2017-04-07 09:41:57.262 DEBUG 7648 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 09:41:57.263  INFO 7648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - is starting.
+2017-04-07 09:41:57.268 DEBUG 7648 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 09:41:57.268  INFO 7648 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds1 >>> 小明1
+2017-04-07 09:41:57.269 DEBUG 7648 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 09:41:57.269  INFO 7648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - is starting.
+2017-04-07 09:41:57.274 DEBUG 7648 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 09:41:57.274  INFO 7648 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds2 >>> 小明2
+2017-04-07 09:41:57.280  INFO 7648 --- [main] o.s.sample.runner.MyStartupRunner1       : ############Hello Shanhy
+2017-04-07 09:41:57.281  INFO 7648 --- [main] o.s.sample.SpringBootSampleApplication   : Started SpringBootSampleApplication in 6.482 seconds (JVM running for 6.697)
+2017-04-07 09:45:31.478  INFO 7648 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[localhost].[/myspringboot]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-07 09:45:31.478  INFO 7648 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-07 09:45:31.503  INFO 7648 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2017-04-07 09:48:38.530  INFO 7648 --- [http-nio-8080-exec-8] o.s.sample.controller.ShiroController    : 对用户[admin]进行登录验证..验证开始
+2017-04-07 09:48:38.536  INFO 7648 --- [http-nio-8080-exec-8] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@36fd5f58[
+  username=admin
+  password={1,2,3}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 09:48:38.541  INFO 7648 --- [http-nio-8080-exec-8] o.s.sample.controller.ShiroController    : 对用户[admin]进行登录验证..验证未通过,未知账户
+2017-04-07 09:48:46.425  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.controller.ShiroController    : 对用户[admin]进行登录验证..验证开始
+2017-04-07 09:48:46.425  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@16c3321e[
+  username=admin
+  password={1,2,3}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 09:48:46.427  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.controller.ShiroController    : 对用户[admin]进行登录验证..验证未通过,未知账户
+2017-04-07 09:49:21.913  INFO 7648 --- [http-nio-8080-exec-4] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证开始
+2017-04-07 09:49:21.913  INFO 7648 --- [http-nio-8080-exec-4] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@5ce969a0[
+  username=tom
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 09:49:21.933  INFO 7648 --- [http-nio-8080-exec-4] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证通过
+2017-04-07 09:49:21.933  INFO 7648 --- [http-nio-8080-exec-4] o.s.sample.controller.ShiroController    : 用户[tom]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 09:49:22.334  INFO 7648 --- [http-nio-8080-exec-5] o.s.sample.security.MyShiroRealm         : ##################执行Shiro权限认证##################
+2017-04-07 09:49:40.947  INFO 7648 --- [http-nio-8080-exec-6] o.s.sample.controller.ShiroController    : ------没有权限-------
+2017-04-07 09:49:47.858  INFO 7648 --- [http-nio-8080-exec-9] o.s.sample.controller.ShiroController    : ------没有权限-------
+2017-04-07 09:49:50.245  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.controller.ShiroController    : ------没有权限-------
+2017-04-07 09:49:57.600  INFO 7648 --- [http-nio-8080-exec-5] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证开始
+2017-04-07 09:49:57.601  INFO 7648 --- [http-nio-8080-exec-5] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@6f103b4a[
+  username=tom
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 09:49:57.606  INFO 7648 --- [http-nio-8080-exec-5] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证通过
+2017-04-07 09:49:57.607  INFO 7648 --- [http-nio-8080-exec-5] o.s.sample.controller.ShiroController    : 用户[tom]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 09:49:57.621  INFO 7648 --- [http-nio-8080-exec-10] o.s.sample.security.MyShiroRealm         : ##################执行Shiro权限认证##################
+2017-04-07 09:50:10.713  INFO 7648 --- [http-nio-8080-exec-3] o.s.sample.controller.ShiroController    : 对用户[jack]进行登录验证..验证开始
+2017-04-07 09:50:10.714  INFO 7648 --- [http-nio-8080-exec-3] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@5b44142d[
+  username=jack
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 09:50:10.718  INFO 7648 --- [http-nio-8080-exec-3] o.s.sample.controller.ShiroController    : 对用户[jack]进行登录验证..验证通过
+2017-04-07 09:50:10.718  INFO 7648 --- [http-nio-8080-exec-3] o.s.sample.controller.ShiroController    : 用户[jack]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 09:50:10.731  INFO 7648 --- [http-nio-8080-exec-4] o.s.sample.security.MyShiroRealm         : ##################执行Shiro权限认证##################
+2017-04-07 09:50:13.841  INFO 7648 --- [http-nio-8080-exec-6] o.s.sample.controller.ShiroController    : ------进入用户信息修改-------
+2017-04-07 09:50:18.696  INFO 7648 --- [http-nio-8080-exec-10] o.s.sample.controller.ShiroController    : ------进入用户信息修改-------
+2017-04-07 09:50:22.471  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.controller.ShiroController    : ------进入用户信息修改-------
+2017-04-07 09:50:24.832  INFO 7648 --- [http-nio-8080-exec-8] o.s.sample.controller.ShiroController    : ------进入用户信息修改-------
+2017-04-07 09:53:24.984  INFO 7648 --- [http-nio-8080-exec-1] o.s.sample.controller.ShiroController    : 对用户[jack]进行登录验证..验证开始
+2017-04-07 09:53:24.984  INFO 7648 --- [http-nio-8080-exec-1] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@310f6b3b[
+  username=jack
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 09:53:24.989  INFO 7648 --- [http-nio-8080-exec-1] o.s.sample.controller.ShiroController    : 对用户[jack]进行登录验证..验证通过
+2017-04-07 09:53:24.990  INFO 7648 --- [http-nio-8080-exec-1] o.s.sample.controller.ShiroController    : 用户[jack]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 09:53:25.003  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.security.MyShiroRealm         : ##################执行Shiro权限认证##################
+2017-04-07 09:53:26.632  INFO 7648 --- [http-nio-8080-exec-4] o.s.sample.controller.ShiroController    : ------进入用户信息修改-------
+2017-04-07 09:53:29.856  INFO 7648 --- [http-nio-8080-exec-7] o.s.sample.controller.ShiroController    : ------进入用户信息修改-------
+2017-04-07 09:53:37.752  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证开始
+2017-04-07 09:53:37.753  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@2bb0503e[
+  username=tom
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 09:53:37.757  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证通过
+2017-04-07 09:53:37.757  INFO 7648 --- [http-nio-8080-exec-2] o.s.sample.controller.ShiroController    : 用户[tom]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 09:53:37.770  INFO 7648 --- [http-nio-8080-exec-3] o.s.sample.security.MyShiroRealm         : ##################执行Shiro权限认证##################
+2017-04-07 09:53:38.762  INFO 7648 --- [http-nio-8080-exec-6] o.s.sample.controller.ShiroController    : ------没有权限-------
+2017-04-07 09:53:41.714  INFO 7648 --- [http-nio-8080-exec-5] o.s.sample.controller.ShiroController    : ------没有权限-------
+2017-04-07 09:53:44.298  INFO 7648 --- [http-nio-8080-exec-9] o.s.sample.controller.ShiroController    : ------没有权限-------
+2017-04-07 10:07:10.251  INFO 7648 --- [http-nio-8080-exec-7] o.s.sample.controller.StudentController  : 从数据库读取Student集合
+2017-04-07 10:40:24.789  INFO 6356 --- [main] o.s.sample.SpringBootSampleApplication   : Starting SpringBootSampleApplication on admin-PC with PID 6356 (E:\SpringBoot\target\classes started by masin in E:\SpringBoot)
+2017-04-07 10:40:24.791 DEBUG 6356 --- [main] o.s.sample.SpringBootSampleApplication   : Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2017-04-07 10:40:24.792  INFO 6356 --- [main] o.s.sample.SpringBootSampleApplication   : No active profile set, falling back to default profiles: default
+2017-04-07 10:40:24.830  INFO 6356 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6707e7cb: startup date [Fri Apr 07 10:40:24 CST 2017]; root of context hierarchy
+2017-04-07 10:40:25.752  INFO 6356 --- [main] o.s.s.d.DynamicDataSourceRegister        : Dynamic DataSource Registry
+2017-04-07 10:40:25.836  INFO 6356 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-04-07 10:40:25.977  INFO 6356 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IUserDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IUserDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 10:40:25.982  INFO 6356 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'IScoreDao' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\SpringBoot\target\classes\org\springboot\sample\dao\IScoreDao.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-04-07 10:40:26.224  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class org.springboot.sample.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$ed844e98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.393  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getEhCacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.399  INFO 6356 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'org.springboot.sample.security.MyShiroRealm.authorizationCache' does not yet exist.  Creating now.
+2017-04-07 10:40:26.419  INFO 6356 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [org.springboot.sample.security.MyShiroRealm.authorizationCache]
+2017-04-07 10:40:26.444  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#2217eeff' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.444  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#2217eeff' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.446  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#472eef75' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.452  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#36662e10' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.555  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jpa.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.560  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration' of type [class org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$9dc8fae1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.588  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.590  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactoryBuilder' of type [class org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:26.598  INFO 6356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-0 - is starting.
+2017-04-07 10:40:26.764  INFO 6356 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-07 10:40:26.801  INFO 6356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-07 10:40:26.874  INFO 6356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-07 10:40:26.876  INFO 6356 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-04-07 10:40:26.877  INFO 6356 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-04-07 10:40:27.025  INFO 6356 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-07 10:40:27.067  INFO 6356 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-07 10:40:27.175  INFO 6356 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-04-07 10:40:27.442  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.443  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [class com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.452  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#eaaec5a' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.480  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.480  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jpaMappingContext' of type [class org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.650  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.650  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IUserDao' of type [class com.sun.proxy.$Proxy72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.651  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myShiroRealm' of type [class org.springboot.sample.security.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.675  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.677  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#32595f08' of type [class org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.677  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#32595f08' of type [class java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.678  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#6ead481c' of type [class org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.678  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#1cf9b703' of type [class org.springframework.data.repository.query.ExtensionAwareEvaluationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.679  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean '(inner bean)#4e5e34d1' of type [class com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.690  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.690  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'IScoreDao' of type [class com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.693  INFO 6356 --- [main] o.s.sample.config.ShiroConfiguration     : ##################从数据库读取权限规则，加载到shiroFilter中##################
+2017-04-07 10:40:27.712  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:27.789  INFO 6356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2bc9ac1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-07 10:40:28.371  INFO 6356 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-07 10:40:28.381  INFO 6356 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-07 10:40:28.382  INFO 6356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2017-04-07 10:40:28.686  INFO 6356 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-07 10:40:28.690  INFO 6356 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/myspringboot]  : Initializing Spring embedded WebApplicationContext
+2017-04-07 10:40:28.690  INFO 6356 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3862 ms
+2017-04-07 10:40:28.739 DEBUG 6356 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Debug
+2017-04-07 10:40:28.740 TRACE 6356 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Trace
+2017-04-07 10:40:28.740  INFO 6356 --- [localhost-startStop-1] o.s.sample.SpringBootSampleApplication   : 日志输出测试 Info
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'delegatingFilterProxy' to urls: [/*]
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'myFilter' to urls: [/*]
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'shiroFilter' to: [/*]
+2017-04-07 10:40:29.757  INFO 6356 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'myServlet' to [/xs/*]
+2017-04-07 10:40:29.758  INFO 6356 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-07 10:40:29.759  INFO 6356 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'org.springboot.sample.servlet.MyServlet' to [/xs/myservlet1]
+2017-04-07 10:40:29.759  INFO 6356 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'org.springboot.sample.servlet.MyServlet2' to [/xs/myservlet2]
+2017-04-07 10:40:29.798  INFO 6356 --- [main] o.s.sample.config.MyWebAppConfigurer     : D:\java\jdk1.7.0_60
+2017-04-07 10:40:29.798  INFO 6356 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=true
+2017-04-07 10:40:29.798  INFO 6356 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=true
+2017-04-07 10:40:29.798  INFO 6356 --- [main] o.s.sample.config.MyWebAppConfigurer     : jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=true
+2017-04-07 10:40:30.371  INFO 6356 --- [main] o.s.sample.config.MyBatisConfiguration   : 注册MyBatis分页插件PageHelper
+2017-04-07 10:40:30.946  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6707e7cb: startup date [Fri Apr 07 10:40:24 CST 2017]; root of context hierarchy
+2017-04-07 10:40:30.952  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected @ModelAttribute methods in resourceUrlProviderController
+2017-04-07 10:40:31.097  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/webjarslocator/{webjar}/**]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.ClassPathResource> org.springboot.sample.config.WebJarsController.locateWebjarAsset(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 10:40:31.099  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String org.springboot.sample.controller.HelloController.hello()
+2017-04-07 10:40:31.100  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/list]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> org.springboot.sample.controller.HelloController.getList()
+2017-04-07 10:40:31.100  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/info]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springboot.sample.controller.HelloController.getInfo(java.lang.String)
+2017-04-07 10:40:31.100  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /index]}" onto public java.lang.String org.springboot.sample.controller.PageController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 10:40:31.101  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page1]}" onto public org.springframework.web.servlet.ModelAndView org.springboot.sample.controller.PageController.page1()
+2017-04-07 10:40:31.101  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page2]}" onto public java.lang.String org.springboot.sample.controller.PageController.page2(org.springframework.ui.Model)
+2017-04-07 10:40:31.101  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/score/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.ScoreController.getScoreList()
+2017-04-07 10:40:31.103  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.unauthorizedRole()
+2017-04-07 10:40:31.104  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.loginForm(org.springframework.ui.Model)
+2017-04-07 10:40:31.104  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.login(org.springboot.sample.entity.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 10:40:31.104  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2017-04-07 10:40:31.104  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(java.util.Map<java.lang.String, java.lang.Object>)
+2017-04-07 10:40:31.105  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit/{userid}]}" onto public java.lang.String org.springboot.sample.controller.ShiroController.getUserList(int)
+2017-04-07 10:40:31.106  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/scoreList]}" onto public java.util.List<org.springboot.sample.entity.Score> org.springboot.sample.controller.StudentController.getScoreList()
+2017-04-07 10:40:31.106  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/likeName]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.likeName(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-04-07 10:40:31.106  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/list]}" onto public java.util.List<org.springboot.sample.entity.Student> org.springboot.sample.controller.StudentController.getStus()
+2017-04-07 10:40:31.108  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-07 10:40:31.108  INFO 6356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-07 10:40:31.295  INFO 6356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myres/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 10:40:31.295  INFO 6356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/myimgs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 10:40:31.295  INFO 6356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 10:40:31.295  INFO 6356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 10:40:31.429  INFO 6356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-07 10:40:32.048  INFO 6356 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-07 10:40:32.102  INFO 6356 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-07 10:40:32.105  INFO 6356 --- [main] o.s.sample.runner.MyStartupRunner1       : >>>>>>>>>>>>>>>服务启动执行，执行加载数据等操作 11111111 <<<<<<<<<<<<<
+2017-04-07 10:40:32.164  INFO 6356 --- [main] o.s.sample.runner.MyStartupRunner1       : 测试这里可以访问数据库：6，23
+2017-04-07 10:40:32.169 DEBUG 6356 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 10:40:32.169  INFO 6356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - is starting.
+2017-04-07 10:40:32.175 DEBUG 6356 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds1 > List org.springboot.sample.service.StudentService.getListByDs1()
+2017-04-07 10:40:32.175  INFO 6356 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds1 >>> 小明1
+2017-04-07 10:40:32.175 DEBUG 6356 --- [main] o.s.s.d.DynamicDataSourceAspect          : Use DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 10:40:32.176  INFO 6356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - is starting.
+2017-04-07 10:40:32.180 DEBUG 6356 --- [main] o.s.s.d.DynamicDataSourceAspect          : Revert DataSource : ds2 > List org.springboot.sample.service.StudentService.getListByDs2()
+2017-04-07 10:40:32.180  INFO 6356 --- [main] o.s.sample.runner.MyStartupRunner1       : 指定数据源Ds2 >>> 小明2
+2017-04-07 10:40:32.185  INFO 6356 --- [main] o.s.sample.runner.MyStartupRunner1       : ############Hello Shanhy
+2017-04-07 10:40:32.187  INFO 6356 --- [main] o.s.sample.SpringBootSampleApplication   : Started SpringBootSampleApplication in 7.75 seconds (JVM running for 8.022)
+2017-04-07 10:41:27.129  INFO 6356 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[localhost].[/myspringboot]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-07 10:41:27.129  INFO 6356 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-07 10:41:27.160  INFO 6356 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2017-04-07 10:41:32.148  INFO 6356 --- [http-nio-8080-exec-7] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证开始
+2017-04-07 10:42:15.351  INFO 6356 --- [http-nio-8080-exec-7] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@2346616[
+  username=tom
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 10:42:59.799  INFO 6356 --- [http-nio-8080-exec-7] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证通过
+2017-04-07 10:42:59.799  INFO 6356 --- [http-nio-8080-exec-7] o.s.sample.controller.ShiroController    : 用户[tom]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 10:42:59.851 ERROR 6356 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/myspringboot] threw exception [org.apache.shiro.session.InvalidSessionException: java.lang.IllegalStateException: getAttribute: Session already invalidated] with root cause
+
+java.lang.IllegalStateException: getAttribute: Session already invalidated
+	at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1195) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:108) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.shiro.web.session.HttpServletSession.getAttribute(HttpServletSession.java:146) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.subject.support.DelegatingSubject.getRunAsPrincipalsStack(DelegatingSubject.java:469) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipals(DelegatingSubject.java:153) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipal(DelegatingSubject.java:149) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getSubjectPrincipal(ShiroHttpServletRequest.java:95) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getUserPrincipal(ShiroHttpServletRequest.java:111) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.springframework.web.servlet.FrameworkServlet.getUsernameForRequest(FrameworkServlet.java:1090) ~[spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.publishRequestHandledEvent(FrameworkServlet.java:1076) ~[spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1004) ~[spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871) ~[spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845) ~[spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springboot.sample.filter.MyFilter.doFilter(MyFilter.java:43) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.4.jar:1.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+
+2017-04-07 10:43:22.409  INFO 6356 --- [http-nio-8080-exec-8] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证开始
+2017-04-07 10:43:22.409  INFO 6356 --- [http-nio-8080-exec-8] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@54910f7d[
+  username=tom
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 10:43:22.415  INFO 6356 --- [http-nio-8080-exec-8] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证通过
+2017-04-07 10:43:22.415  INFO 6356 --- [http-nio-8080-exec-8] o.s.sample.controller.ShiroController    : 用户[tom]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 10:43:22.462  INFO 6356 --- [http-nio-8080-exec-9] o.s.sample.security.MyShiroRealm         : ##################执行Shiro权限认证##################
+2017-04-07 10:43:59.793  INFO 6356 --- [http-nio-8080-exec-1] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证开始
+2017-04-07 10:44:03.786  INFO 6356 --- [http-nio-8080-exec-1] o.s.sample.security.MyShiroRealm         : 验证当前Subject时获取到token为：org.apache.shiro.authc.UsernamePasswordToken@34865612[
+  username=tom
+  password={1,2,3,4,5,6}
+  rememberMe=false
+  host=<null>
+]
+2017-04-07 10:44:03.795  INFO 6356 --- [http-nio-8080-exec-1] o.s.sample.controller.ShiroController    : 对用户[tom]进行登录验证..验证通过
+2017-04-07 10:44:03.795  INFO 6356 --- [http-nio-8080-exec-1] o.s.sample.controller.ShiroController    : 用户[tom]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2017-04-07 10:44:03.813  INFO 6356 --- [http-nio-8080-exec-3] o.s.sample.security.MyShiroRealm         : ##################执行Shiro权限认证##################
