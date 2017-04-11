@@ -2,6 +2,7 @@ package org.springboot.sample.entity;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import javax.persistence.Entity;
@@ -39,6 +40,25 @@ public class User {
 	@JoinTable(name = "t_user_role", joinColumns = { @JoinColumn(name = "user_id") }, inverseJoinColumns = {
 			@JoinColumn(name = "role_id") })
 	private List<Role> roleList;// 一个用户具有多个角色
+
+	private String name;
+	private int age;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
 
 	public User() {
 		super();
